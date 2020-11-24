@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "67574b74-d2c8-44f2-8598-4339b1a83dfb",
+		"name": "Assignment: Shiv Kumar Saini",
+		"description": "Assignment on node.js",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "WithdrawCash",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\": 2600\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/withdrawCash",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"withdrawCash"
+					]
+				},
+				"description": "Withdraw cash with minimum number of currency notes."
+			},
+			"response": []
+		},
+		{
+			"name": "Max. Color Count",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/getMaxColor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getMaxColor"
+					]
+				},
+				"description": "Withdraw cash with minimum number of currency notes."
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer"
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "b5ecea44-50d3-4795-8b6e-5a4f61bb124f",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "c4b69660-add9-438c-a8a7-54291c841a12",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

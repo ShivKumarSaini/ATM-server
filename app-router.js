@@ -9,7 +9,7 @@ class AppRouter {
         this.router.route('/')
             .get((req, res, next) => {
                 console.log(`serving GET request on route '/'...`);
-                res.status(200).send("You may want to call '/withdrawCash' and '/getMaxColor' route with postman script.");
+                res.status(200).send("You may want to call '/withdrawCash' route with postman script.");
             });
 
         this.router.route('/withdrawCash')
@@ -18,11 +18,11 @@ class AppRouter {
                 CashDispenserHandler.withdrawCash.bind(CashDispenserHandler)
             ]);
 
-        this.router.route('/getMaxColor')
-            .get([
-                (req, res, next) => { console.log(`serving GET request on route '/getMaxColor'...`); next(); },
-                ColorsHandler.getMaxColor.bind(ColorsHandler)
-            ]);
+//         this.router.route('/getMaxColor')
+//             .get([
+//                 (req, res, next) => { console.log(`serving GET request on route '/getMaxColor'...`); next(); },
+//                 ColorsHandler.getMaxColor.bind(ColorsHandler)
+//             ]);
     }
 
     get router() {

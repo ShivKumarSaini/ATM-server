@@ -11,5 +11,3 @@
     i. Default URL: '/'
 
     ii. ATM assignment (POST method): '/withdrawCash'
-    
-    iii. Color assignment (GET method): '/getMaxColor'

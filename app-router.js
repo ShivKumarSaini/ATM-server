@@ -18,11 +18,11 @@ class AppRouter {
                 CashDispenserHandler.withdrawCash.bind(CashDispenserHandler)
             ]);
 
-        this.router.route('/getMaxColor')
-            .get([
-                (req, res, next) => { console.log(`serving GET request on route '/getMaxColor'...`); next(); },
-                ColorsHandler.getMaxColor.bind(ColorsHandler)
-            ]);
+        // this.router.route('/getMaxColor')
+        //     .get([
+        //         (req, res, next) => { console.log(`serving GET request on route '/getMaxColor'...`); next(); },
+        //         ColorsHandler.getMaxColor.bind(ColorsHandler)
+        //     ]);
     }
 
     get router() {
